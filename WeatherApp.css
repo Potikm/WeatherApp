@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Roboto+Serif:wght@100;200&display=swap');
+
+
+
+*{
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Roboto Serif', serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background: rgb(49,202,255);
+    background: radial-gradient(circle, rgba(49,202,255,1) 48%, rgba(39,102,172,1) 90%, rgba(39,31,208,1) 100%, rgba(0,206,255,1) 100%);
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+
+.inputPlace{
+    margin-top: 200px;
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.inputPlace .inputCity{
+    border: solid 1px black;
+    padding-left: 8px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.weathers{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 30px;
+  
+}
+
+.weather{
+    position: absolute;
+    width: 250px;
+    height: 330px;
+    background-color:  whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 15px;
+    margin-top: 50px;
+    position: relative;
+
+}
+
+.infos{
+    display: flex;
+    
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  
+}
+
+.weather .pic{
+    max-width: 105px;
+}
+
+.tempPic{
+   max-width: 45px;
+}
+
+.feeling{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    top: 100%;
+    left: 0;
+    border-left: none;
+    border-bottom: none;
+    width: 100%;
+}
+
+.humidity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    width: 100%;
+}
+
+.humPic{
+    max-width: 40px;
+}
